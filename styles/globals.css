@@ -15,7 +15,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +23,26 @@ a {
     color: white;
     background: black;
   }
+} */
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.nav-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+  margin: 0 30px;
 }
