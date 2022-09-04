@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.privacy-container{
+.privacy__container{
     padding: 2rem;
     background-color: #fff;
     border-radius: 0.5rem;
@@ -22,14 +22,14 @@
 
 }
 
-.policy-para{
+.policy__para{
     font-size: 1rem;
     color: #384883;
     margin-bottom: 1rem;
     padding: 0 10px;
 }
 
-.policy-para p{
+.policy__para:p{
     
     color: #000;
     margin-bottom: 1rem;
@@ -43,9 +43,8 @@
     color: #384883;
     text-align: start;
 }
-/* li>{
-    color: #000;
-} */
+
+
 
 @media screen and (max-width: 768px) {
     .wrapper{
