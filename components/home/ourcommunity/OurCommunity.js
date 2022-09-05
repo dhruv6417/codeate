@@ -1,14 +1,14 @@
 import React from 'react'
-import "./Ourcommunity.css"
+import  styles from "../../../styles/home/OurCommunity.module.css"
 
 const Ourcommunity = () => {
   return (
-    <div className='Our-community'>
-      <div className="o-community">
+    <div className={`${styles.Our_community}`}>
+      <div className={`${styles.o_community}`}>
        Join our community for free
       </div>
-      <div className="O-comm-sponsor-holder">
-        <div className="o-s-card whatsapp">
+      <div className={`${styles.O_comm_sponsor_holder}`}>
+        <div className={`${styles.o_s_card} ${styles.whatsapp}`}>
           <a href='https://chat.whatsapp.com/Dy5uAVlpzFj3ent90TMjeW' target='_blank'>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png" alt="wassup" />
           </a>
@@ -17,7 +17,7 @@ const Ourcommunity = () => {
             <p>Whats App</p>
           </div> */}
         </div>
-        <div className="o-s-card linkedin">
+        <div className={`${styles.o_s_card} ${styles.linkedin}`}>
           <a href='https://www.linkedin.com/company/code8-connect' target='_blank'>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="linkedin" />
           </a>
@@ -26,7 +26,7 @@ const Ourcommunity = () => {
             <p>Linked in.</p>
           </div> */}
         </div>
-        <div className="o-s-card discord">
+        <div className={`${styles.o_s_card} ${styles.discord}`}>
           <a href='http://dsc.gg/code8' target='_blank'>
           <img src="https://www.linuxadictos.com/wp-content/uploads/discord.jpg" alt="discord" />
           </a>
@@ -35,7 +35,7 @@ const Ourcommunity = () => {
             <p>Discord</p>
           </div> */}
         </div>
-        <div className="o-s-card instagram">
+        <div className={`${styles.o_s_card} ${styles.instagram}`}>
           <a href='https://instagram.com/codeate.in?igshid=YmMyMTA2M2Y=' target='_blank'>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="instagram" />
           </a>

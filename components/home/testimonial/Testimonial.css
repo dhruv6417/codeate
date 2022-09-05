@@ -1,0 +1,91 @@
+.Testimonial{
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.Testimonial-holder{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 6vh 0;
+    padding: 0px 10px;
+    /* height: min-content; */
+}
+
+#img-rating {
+    width: 70%;
+}
+
+#img-home{
+    position: relative;
+}
+
+.testimonial-card{
+    position: relative;    
+    /* flex-basis: 250px; */
+    flex-grow: 0.1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.1rem;
+    background: #c6d9e2;
+    padding: 1.2rem;
+    border-radius: 25px;
+    max-width: 400px;
+    height: 550px;
+    overflow-y: auto;
+}
+.Name-holder{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.organization{
+    font-weight: bold;
+    color: gray;
+    display: block;
+    margin-top: -10px;
+    /* margin-bottom: -10px; */
+}
+.testimonial-card::-webkit-scrollbar {
+    /* width: 20px !important; */
+    display: unset !important;
+  }
+  .testimonial-card::-webkit-scrollbar {
+    width: 10px;  
+    /* position: absolute;
+    right: -20px;             width of the entire scrollbar */
+  }
+  
+  .testimonial-card::-webkit-scrollbar-track {
+    background: #c6d9e2;
+    border-radius: 20px;
+  }
+  
+  .testimonial-card::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #c6d9e2;  /* creates padding around scroll thumb */
+  }
+  
+  .testimonial-card {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: black #c6d9e2;
+    /* border-radius: 2px; */
+       /* scroll thumb and track */ 
+  }
+  .mySwiper{
+    position: relative;
+    padding-bottom: 20px !important;
+}
+.swiper-pagination-bullets{
+    position: absolute;
+    bottom: -6px !important; 
+    /* bottom: -20px !important; */
+}
+.myswiperslide{
+    display: flex;
+    justify-content: center;
+}
