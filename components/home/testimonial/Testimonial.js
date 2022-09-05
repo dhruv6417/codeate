@@ -1,24 +1,24 @@
 import React from 'react'
-import "./Testimonial.css"
 import  { useState, useEffect } from 'react';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import styles from "../../../styles/home/Testimonial.module.css"
 
 // Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+// import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper.min.css";
 
 const Card = (props) => {
     return (
-        <div className="testimonial-card">
-            <img id="img-home" style={{ borderRadius: "50%" }} src={props.image_url} ></img>
+        <div className={`${styles.testimonial_card}`}>
+            <img className={`${styles.img_home}`} style={{ borderRadius: "50%" }} src={props.image_url} ></img>
             <div className="Name-holder">
                 {props.name}
             </div>
-            {props.orgnaization && <p className='organization'>{props.orgnaization}</p>}
+            {props.orgnaization && <p className={`${styles.orgnaization}`}>{props.orgnaization}</p>}
             {/* <img id="img-rating" src="https://github.com/KapadiaShubham/code8-media/blob/master/home/img/rating.png?raw=true" ></img> */}
-            <div className="Testimonial-exp">
+            <div className={`${styles.testimonial_exp}`}>
                 {props.description}
             </div>
         </div>
@@ -70,6 +70,7 @@ const Testimonial = () => {
         window
         .matchMedia("(max-width: 900px) and (min-width: 550px)")
         .addEventListener('change', e => setMatches900( e.matches ));
+        
         window
         .matchMedia("(max-width: 550px)")
         .addEventListener('change', e => setMatches550( e .matches ));
@@ -78,9 +79,9 @@ const Testimonial = () => {
             console.log(matches550, matches900)
       }, [matches550, matches900])
     return (
-        <div className='Testimonial'>
+        <div className={`${styles.Testimonial}`}>
 
-            <div className='Testimonial-head'>
+            <div className={`${styles.Testimonial_head}`}>
                 <h1>
                     Testimonials
                 </h1>
@@ -88,7 +89,7 @@ const Testimonial = () => {
             <h2>
                 Some amazing experiences from techies around.
             </h2>
-            <div className="Testimonial-holder">
+            <div className={`${styles.Testimonial_holder}`}>
                 <Swiper
                     modules={[Autoplay, Pagination, A11y]}
                     spaceBetween={50}
@@ -104,7 +105,7 @@ const Testimonial = () => {
                     className={"mySwiper"}>
                     {data.map((item, index) => {
                         return (
-                            <SwiperSlide className='myswiperslide'>
+                            <SwiperSlide className={`${styles.myswiperslide}`}>
                                 <Card key={index} name={item.name} orgnaization={item.orgnaization} image_url={item.image_url} description={item.description} />
                             </SwiperSlide>
                         )

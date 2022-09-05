@@ -14,11 +14,11 @@
     /* height: min-content; */
 }
 
-#img-rating {
+#img_rating {
     width: 70%;
 }
 
-#img-home{
+.img_home{
     position: relative;
 }
 
@@ -38,7 +38,7 @@
     height: 550px;
     overflow-y: auto;
 }
-.Name-holder{
+.Name_holder{
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -80,7 +80,7 @@
     position: relative;
     padding-bottom: 20px !important;
 }
-.swiper-pagination-bullets{
+.swiper_pagination_bullets{
     position: absolute;
     bottom: -6px !important; 
     /* bottom: -20px !important; */

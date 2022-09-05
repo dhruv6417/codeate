@@ -81,6 +81,24 @@
     box-shadow: 0.5rem 0.5rem 2rem #d1d1d1, -14px -14px 57px #ffffff;
 }
 
+.col{
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+    .row {
+        display: flex;
+        margin-right: -15px;
+        margin-bottom: -15px;
+        margin-left: -15px;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
 @media only screen and (max-width: 790px) {
     .ourPartners h2 {
         font-size: 2rem;

@@ -9,6 +9,8 @@ import Stats from '../components/home/stats/Stats'
 import Ourreach from '../components/home/ourreach/Ourreach'
 import OurPartners from '../components/home/ourpartners/OurPartners'
 import Ourcommunity from '../components/home/ourcommunity/OurCommunity'
+// import Eventgallery from '../components/home/eventgallery/Eventgallery'
+import Testimonial from '../components/home/testimonial/Testimonial'
 
 export default function Home() {
   return (
@@ -18,10 +20,10 @@ export default function Home() {
       <Aboutcode8/>
       <Stats/>
       <Ourreach/>
-      {/*<Testimonial />
-      <Eventgallery /> */}
-      {/* <OurPartners/>
-      <Ourcommunity/> */}
+      {/* <Testimonial/> */}
+      {/* <Eventgallery/> */}
+      <OurPartners/>
+      <Ourcommunity/>
     </>
   )
 }

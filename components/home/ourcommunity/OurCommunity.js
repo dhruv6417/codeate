@@ -7,7 +7,7 @@ const Ourcommunity = () => {
       <div className={`${styles.o_community}`}>
        Join our community for free
       </div>
-      <div className={`${styles.O_comm_sponsor_holder}`}>
+      <div className={`${styles.o_comm_sponsor_holder}`}>
         <div className={`${styles.o_s_card} ${styles.whatsapp}`}>
           <a href='https://chat.whatsapp.com/Dy5uAVlpzFj3ent90TMjeW' target='_blank'>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png" alt="wassup" />
