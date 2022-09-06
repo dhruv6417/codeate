@@ -13,7 +13,7 @@ const Card = (props) => {
     return (
         <div className={`${styles.testimonial_card}`}>
             <img className={`${styles.img_home}`} style={{ borderRadius: "50%" }} src={props.image_url} ></img>
-            <div className="Name-holder">
+            <div className={`${styles.Name_holder}`}>
                 {props.name}
             </div>
             {props.orgnaization && <p className={`${styles.orgnaization}`}>{props.orgnaization}</p>}
