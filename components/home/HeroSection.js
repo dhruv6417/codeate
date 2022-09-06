@@ -1,7 +1,8 @@
 import React from 'react';
 // import { Button } from '../../Button';
 import Link from 'next/link';
-import styles from '../../../styles/home/HeroSection.module.css'
+import styles from '../../styles/home/HeroSection.module.css'
+import { Button } from '../button/Button.js';
 
 function HeroSection({
   topLine,
@@ -29,14 +30,16 @@ function HeroSection({
                 <p className={`${styles.home__hero_subtitle}`} >
                   {description}
                 </p>
-                {/* <Link to='/community'>
-                  <Button buttonSize='btn--large' buttonColor='blue'>
-                    {buttonLabel}
-                  </Button>
-                </Link> */}
+                <Link href='/community' passHref>
+                  <a>
+                    <Button  buttonSize='btn--large' buttonColor='blue'>
+                      {buttonLabel}
+                    </Button>
+                  </a>
+                </Link>
               </div>
             </div>
-            <div className={`${styles.col}`}>
+            <div className= {`${styles.col}`}>
               <div className={`${styles.home__hero_img_wrapper}`}>
                 <img src={img} alt={alt} className={`${styles.home__hero_img}`} />
               </div>

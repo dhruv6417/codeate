@@ -3,7 +3,7 @@ import  { useState, useEffect } from 'react';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from "../../../styles/home/Testimonial.module.css"
+import styles from "../../styles/home/Testimonial.module.css"
 
 // Import Swiper styles
 // import "swiper/swiper-bundle.min.css";

@@ -23,6 +23,9 @@
         padding: 0.4rem 0.8rem;
         cursor: pointer;
         margin: 1rem 0;
+
+        position: absolute;
+        bottom: 1%;
 }
 
 .Explore_more a{

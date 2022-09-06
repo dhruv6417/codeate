@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../../styles/home/OurPartners.module.css"
+import styles from "../../styles/home/OurPartners.module.css"
 
 function OurPartnersItem(props) {
     return (

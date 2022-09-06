@@ -1,9 +1,8 @@
 import React from 'react';
-import './Button.css'
-import { Link } from 'react-router-dom';
+// import './Button.css'
+// import Link from 'next/link';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--sub'];
-
 const SIZES = ['btn--medium', 'btn--large'];
 
 export const Button = ({

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import { offeringData } from '../../../data/OfferingData';
+import { offeringData } from '../../data/OfferingData';
 
-import styles from '../../../styles/home/Ouroffering.module.css'
-// import Link from 'next/link'
+import styles from '../../styles/home/Ouroffering.module.css'
+import Link from 'next/link'
 
 const OfferingCard=(props)=>{
     return(
@@ -19,7 +19,12 @@ const OfferingCard=(props)=>{
           <div className={`${styles.Offer_name}`}>{props.title}</div>
           <div className={`${styles.offer_content}`}>{props.content}</div>
         {/* </div> */}
-        {/* <div className='Explore-more'> <Link to={props.linkpath}>{props.buttonTitle}<i className='fa-solid fa-angle-right'></i></Link></div> */}
+        <div className={`${styles.Explore_more}`}> <Link href={props.linkpath} passHref>
+          <a>
+          {props.buttonTitle}
+          <i className='fa-solid fa-angle-right'></i>
+        </a>
+        </Link></div>
       </div>
     )
 }

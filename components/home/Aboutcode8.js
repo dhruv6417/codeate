@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/home/Aboutcode8.module.css'
+import styles from '../../styles/home/Aboutcode8.module.css'
 
 const Aboutcode8 = () => {
     return (

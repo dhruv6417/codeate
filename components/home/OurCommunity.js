@@ -1,5 +1,5 @@
 import React from 'react'
-import  styles from "../../../styles/home/OurCommunity.module.css"
+import  styles from "../../styles/home/OurCommunity.module.css"
 
 const Ourcommunity = () => {
   return (
