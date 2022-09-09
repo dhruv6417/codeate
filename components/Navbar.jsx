@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../assets/images/code8.png'
 import styles from '../styles/Navbar.module.css'
+import { Button } from './button/Button'
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
@@ -37,8 +38,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="butn ">
-          <button className="primary btn--primary">Login</button>
-          <button className="primary btn--primary">Sign Up</button>
+        <Button  buttonSize='btn--medium' buttonColor='blue'>
+                      Login
+        </Button>
+        <Button  buttonSize='btn--medium' buttonColor='blue'>
+                      Sign Up
+        </Button>
+          {/* <button className="primary btn--primary">Login</button>
+          <button className="primary btn--primary">Sign Up</button> */}
         </div>
     </div>
   )
