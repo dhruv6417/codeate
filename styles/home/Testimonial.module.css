@@ -76,7 +76,10 @@
     /* border-radius: 2px; */
        /* scroll thumb and track */ 
   }
-  .mySwiper{
+
+
+  
+.mySwiper{
     position: relative;
     padding-bottom: 20px !important;
 }

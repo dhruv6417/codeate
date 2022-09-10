@@ -5,9 +5,11 @@ import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from "../../styles/home/Testimonial.module.css"
 
-// Import Swiper styles
-// import "swiper/swiper-bundle.min.css";
-// import "swiper/swiper.min.css";
+//new imports
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Card = (props) => {
     return (
@@ -60,13 +62,13 @@ const data = [
     }
 ]
 const Testimonial = () => {
-    const [matches900, setMatches900] = useState(
-        window.matchMedia("(max-width: 900px)").matches
-      )
-      const [matches550, setMatches550] = useState( 
-        window.matchMedia("(mmax-width: 550px)").matches
-      )
+    //will give error as it will execute on server side and window will give error
+    const [matches900, setMatches900] = useState()
+    const [matches550, setMatches550] = useState()
       useEffect(() => {
+        setMatches900(window.matchMedia("(max-width: 900px)").matches)
+        setMatches550(window.matchMedia("(mmax-width: 550px)").matches)
+
         window
         .matchMedia("(max-width: 900px) and (min-width: 550px)")
         .addEventListener('change', e => setMatches900( e.matches ));
@@ -99,7 +101,6 @@ const Testimonial = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    // autoplay={false}
                     loop={true}
                     pagination={{ clickable: true }}
                     className={"mySwiper"}>
@@ -111,7 +112,6 @@ const Testimonial = () => {
                         )
                     })}
                 </Swiper>
-                {/* </Swiper> */}
             </div>
 
         </div>

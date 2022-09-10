@@ -1,20 +1,25 @@
 import React from 'react'
-import "./Eventgallery.css"
-import "../Testimonials/Testimonial.css"
+
+// import "../Testimonials/Testimonial.css"
 import { useState, useEffect } from 'react';
 import {  Autoplay, Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import styles from "../../styles/home/Eventgallery.module.css"
 
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 // Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+// import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper.min.css";
+
 const Frame = (props) => {
     return (
-        <div className="Frame">
-            <div className="event-image">
+        <div className={`${styles.Frame}`}>
+            <div className={`${styles.event_image}`}>
                 <a href={props.href}>
-                    <img src={props.img} className="img-fluid" alt="thumbnail" />
+                    <img src={props.img} className={`${styles.img_fluid}`} alt="thumbnail" />
                 </a>
             </div>
         </div>
@@ -23,47 +28,45 @@ const Frame = (props) => {
 const data = [
     {
         href: "https://code8.ggeeks.me",
-        img: "https://github.com/KapadiaShubham/code8-media/blob/master/home/img/Event1.jpeg?raw=true"
+        // img: "https://github.com/KapadiaShubham/code8-media/blob/master/home/img/Event1.jpeg?raw=true"
+        img: "/images/events/Event1.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event2.jpeg"
+        img: "/images/events/Event2.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event3.jpeg"
+        img: "/images/events/Event3.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event4.jpeg"
+        img: "/images/events/Event4.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event5.jpeg"
+        img: "/images/events/Event5.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event6.jpeg"
+        img: "/images/events/Event6.jpeg"
     },
     {
         href: "https://code8.ggeeks.me",
-        img: "/images/Event7.jpeg"
+        img: "/images/events/Event7.jpeg"
     }
 ]
 const Eventgallery = () => {
-    const [matches1500, setMatches1500] = useState(
-        window.matchMedia("(max-width: 1500px)").matches
-    )
-    const [matches1300, setMatches1300] = useState(
-        window.matchMedia("(max-width: 1300px)").matches
-    )
-    const [matches900, setMatches900] = useState(
-        window.matchMedia("(max-width: 900px)").matches
-    )
-    const [matches550, setMatches550] = useState(
-        window.matchMedia("(max-width: 550px)").matches
-    )
+    const [matches1500, setMatches1500] = useState()
+    const [matches1300, setMatches1300] = useState()
+    const [matches900, setMatches900] = useState()
+    const [matches550, setMatches550] = useState()
     useEffect(() => {
+        setMatches1500(window.matchMedia("(max-width: 1500px)").matches)
+        setMatches1300(window.matchMedia("(max-width: 1300px)").matches)
+        setMatches900(window.matchMedia("(max-width: 900px)").matches)
+        setMatches550(window.matchMedia("(mmax-width: 550px)").matches)
+
         window
         .matchMedia("(max-width: 1500px)")
         .addEventListener('change', e => setMatches1500(e.matches));
@@ -81,13 +84,13 @@ const Eventgallery = () => {
         console.log(matches550, matches900, matches1300, matches1500)
     }, [matches550, matches900, matches1300, matches1500])
     return (
-        <div className='Event-gallery'>
+        <div className={`${styles.Event_gallery}`}>
             <div>
                 <h1>
                     Event Gallery
                 </h1>
             </div>
-            <div className="galleryholder">
+            <div className={`${styles.galleryholder}`}>
                 <Swiper
                     modules={[Autoplay, Pagination, A11y]}
                     spaceBetween={50}
