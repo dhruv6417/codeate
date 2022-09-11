@@ -266,4 +266,36 @@ img:hover {
   padding-bottom: 20px;
 }
 
+
+
 /*------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------TESTIMONIAL CARD-----------------------------------------------------*/
+/*WORKING ONLY WITH GOOGLE, so MUST NEED TO FIND BETTER WAY*/
+.testimonial-card::-webkit-scrollbar {
+  /* width: 20px !important; */
+  display: unset !important;
+}
+.testimonial-card::-webkit-scrollbar {
+  width: 10px;  
+  /* position: absolute;
+  right: -20px;             width of the entire scrollbar */
+}
+
+.testimonial-card::-webkit-scrollbar-track {
+  background: #c6d9e2;
+  border-radius: 20px;
+}
+
+.testimonial-card::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #c6d9e2;  /* creates padding around scroll thumb */
+}
+
+.testimonial-card {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: black #c6d9e2;
+  /* border-radius: 2px; */
+     /* scroll thumb and track */ 
+}
+/*--------------------------------------------------------------------------------------------------------------*/

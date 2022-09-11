@@ -13,7 +13,7 @@ import 'swiper/css/scrollbar';
 
 const Card = (props) => {
     return (
-        <div className={`${styles.testimonial_card}`}>
+        <div className={`${styles.testimonial_card}  testimonial-card`}>
             <img className={`${styles.img_home}`} style={{ borderRadius: "50%" }} src={props.image_url} ></img>
             <div className={`${styles.Name_holder}`}>
                 {props.name}
