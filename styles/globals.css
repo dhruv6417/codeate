@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html,
 body {
   padding: 0;
@@ -250,4 +252,50 @@ img:hover {
   }
 /*------------------------------------------------------------------------------------------------------------*/
 
+/*--------------------------------SWIPER---------------------------------------------------------------------------*/
+.mySwiper{
+  position: relative;
+  padding-bottom: 20px !important;
+}
+.swiper_pagination_bullets{
+  position: absolute;
+  bottom: -6px !important; 
+}
 
+.swiper-wrapper{
+  padding-bottom: 20px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------TESTIMONIAL CARD-----------------------------------------------------*/
+/*WORKING ONLY WITH GOOGLE, so MUST NEED TO FIND BETTER WAY*/
+.testimonial-card::-webkit-scrollbar {
+  /* width: 20px !important; */
+  display: unset !important;
+}
+.testimonial-card::-webkit-scrollbar {
+  width: 10px;  
+  /* position: absolute;
+  right: -20px;             width of the entire scrollbar */
+}
+
+.testimonial-card::-webkit-scrollbar-track {
+  background: #c6d9e2;
+  border-radius: 20px;
+}
+
+.testimonial-card::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #c6d9e2;  /* creates padding around scroll thumb */
+}
+
+.testimonial-card {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: black #c6d9e2;
+  /* border-radius: 2px; */
+     /* scroll thumb and track */ 
+}
+/*--------------------------------------------------------------------------------------------------------------*/

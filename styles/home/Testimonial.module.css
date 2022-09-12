@@ -49,34 +49,11 @@
     margin-top: -10px;
     /* margin-bottom: -10px; */
 }
-.testimonial_card::-webkit-scrollbar {
-    /* width: 20px !important; */
-    display: unset !important;
-  }
-  .testimonial_card::-webkit-scrollbar {
-    width: 10px;  
-    /* position: absolute;
-    right: -20px;             width of the entire scrollbar */
-  }
+
+
+
   
-  .testimonial_card::-webkit-scrollbar-track {
-    background: #c6d9e2;
-    border-radius: 20px;
-  }
-  
-  .testimonial_card::-webkit-scrollbar-thumb {
-    background-color: black;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #c6d9e2;  /* creates padding around scroll thumb */
-  }
-  
-  .testimonial_card {
-    scrollbar-width: thin;          /* "auto" or "thin" */
-    scrollbar-color: black #c6d9e2;
-    /* border-radius: 2px; */
-       /* scroll thumb and track */ 
-  }
-  .mySwiper{
+.mySwiper{
     position: relative;
     padding-bottom: 20px !important;
 }
