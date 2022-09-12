@@ -5,8 +5,16 @@
   width:900px;
 }
 
+.grid__container{
+  display:grid;
+  grid-template-columns: auto auto;
+  background-color: #0cb5d4;
+  clip-path:polygon(0% 0%,100% 0,100% 92%, 100% 90%, 0% 100%);
+}
+
 .im1 img{
   position:absolute;
+  margin-top: 60px;
   right:75px;
 }
 

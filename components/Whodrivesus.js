@@ -2,13 +2,13 @@ import React from 'react'
 import styles from '../styles/Whodrivesus.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import Vision from '../assets/images/vision.png'
+import Vision from '../assets/images/Vision.png'
 import Mission from '../assets/images/Mission.jpg'
 
 const Card = (props) => {
     return (
-        <div className={`${styles.w__card} ${props.index===0? "":`${styles.not__first__card}`}`}>
-            <Image src={props.Image} alt=""/>
+        <div className={`${styles.w__card} ${props.index===0? "":`${styles.not__first__card}`}`} id="im3">
+            <Image src={props.imgLink} alt="ima" width={100} height={100}/>
             <div className={styles.w__reason}>{props.title}</div>
             <div className={styles.w__card__content}>
                 {props.content}
@@ -19,12 +19,12 @@ const Card = (props) => {
 const data = [
     {
         title: "Vision",
-        Image: {Vision},
+        imgLink: Vision,
         content: "To provide industry relevant skills and exposure to every engineer in making."
     },
     {
         title: "Mission",
-        Image: {Mission},
+        imgLink: Mission,
         content: "Upskilling young geniuses to create a better world through technology."
     }
 ]
