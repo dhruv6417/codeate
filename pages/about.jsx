@@ -14,7 +14,7 @@ const about = () => {
       <About/>
       <Whodrivesus/>
       <WhatWhy/>
-      <Ouroffering/>
+      <Ouroffering Heading={"Our offerings"}/>
       <Mentorstats/>
       
     </div>
