@@ -82,13 +82,13 @@ const Footer = () => {
                     <div className={styles.footer__links}>
                         <div className={styles.footer__link__wrapper}>
                             <div className={styles.footer__link__items}>
-                                <h2>Our Offerings</h2>
+                                <h2 className={styles.footer__title}>Our Offerings</h2>
                                 <Link href="/built">Build</Link>
                                 <Link href="/learn">Learn</Link>
                                 <Link href="/community">Community</Link>
                             </div>
                             <div className={styles.footer__link__items}>
-                                <h2>Quick Links</h2>
+                                <h2 className={styles.footer__title}>Quick Links</h2>
                                 <Link href="/">Home</Link>
                                 <Link href="/about-us">About</Link>
                                 <Link href="learn">Blogs</Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                         </div>
                         <div className={styles.footer__link__wrapper}>
                             <div className={styles.footer__link__items}>
-                                <h2>Contact Us</h2>
+                                <h2 className={styles.footer__title}>Contact Us</h2>
                                 <p className={styles.p__address}>
                                     Flat No. 117, Block C, Sunrise Residency, Rukmini enclave,
                                     Bolarum, Hyderbad.(500010)
