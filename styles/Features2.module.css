@@ -16,12 +16,8 @@
     display: flex;
     justify-content: center;
 }
-.features2 .grid_container_home  {
-    margin: 1rem;
-    border-radius: 27px;
-    padding: 0.7rem 1rem;
-}
-.grid_item{
+.features2 .grid_container_home .grid_item {
+    background-color: #f5f5f5;
     margin: 1rem;
     border-radius: 27px;
     padding: 0.7rem 1rem;

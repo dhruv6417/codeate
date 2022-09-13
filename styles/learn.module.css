@@ -187,7 +187,7 @@
     padding: 2rem 3rem 2rem 2rem;
 }
 
-.hello {
+.s2_hello {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -195,6 +195,19 @@
     padding: 30px;
     align-items: center;
     margin-bottom: 70px;
+}
+.stats2_information{
+        width: 100%;
+        display: flex;
+    
+}
+.mentor_text_info {
+    padding: 2rem 5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 .information {
@@ -264,6 +277,10 @@
     font-weight: 400;
 }
 
+.slider{
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width: 790px) {
     /* .why-code8-heading {} */
     .why_code8_heading h3 {
@@ -304,4 +321,55 @@
     .learnPage .btn .icon {
         width: 13%;
     }
+    
+}
+#testbutton {
+    margin-top: 2.3rem;
+    width: 12rem;
+    height: 50px;
+    border-radius: 180px;
+    position: relative;
+    left: calc(50% - 6rem);
+    top: calc(50% - 25px);
+    background: linear-gradient(60deg,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
+    cursor: pointer;
+    line-height: 12px;
+}
+#testbutton:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    left: 10%;
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    opacity: 0;
+}
+#testbutton:after {
+    content: "Coming Soon!";
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.3rem;
+    font-family: "PT Sans",sans-serif;
+    color: #ebebeb;
+    font-weight: 700;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    border-radius: 180px;
+    width: 92%;
+    height: 80%;
+    top: 10%;
+    left: 4%;
+    background-color: #131416;
+}
+@media only screen and (min-width: 791px){
+.bg_built_nextpro {
+    margin-top: 70px;
+    background-color: rgba(25,120,165,.7);
+    padding-bottom: 2rem;
+}
 }

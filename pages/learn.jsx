@@ -25,7 +25,7 @@ export default function Courses () {
               Deloitte, TCE, Hitachi, Cisco to provide you with industry
               relevant cohort based courses.
             </p>
-            <div className={`${styles.flex} ${styles.justify_content_center}`}>
+            <div className={`${styles.sliders}`}>
               <Link className={`${styles.btn}`} href='/learn'>
                <a> <span className={`${styles.btn_content}`}>
                   Register to get notify for our next cohort
