@@ -92,7 +92,7 @@ export const Navbar = () => {
             {/* Library */}
             <li className="nav-item" onClick={extendElement1}>
               <Link
-                href="/built"
+                href="/build"
                 className="nav-links"
                 onClick={closeMobileMenu1}
               >
