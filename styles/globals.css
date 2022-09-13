@@ -299,3 +299,291 @@ img:hover {
      /* scroll thumb and track */ 
 }
 /*--------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------NAVBAR------------------------------------------------------*/
+
+.navbar-s {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background: linear-gradient(136deg, #56a8d0, #00b7d5, #089ee8);
+    height: 90px;
+    color: #fff;
+    align-items: center;
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* width: 100vw; */
+    z-index: 999;
+    border-bottom: solid 1px white;
+    padding: 0 40px;
+}
+
+.stylee {
+  background: #1978A5;
+  /* box-shadow: 4px 12px 4px rgba(0, 0, 0, 0.5); */
+  border-radius: 9px;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+
+.nav-links :hover {
+  background-color: #08B3E5;
+}
+
+.sizee {
+  font-size: 14px !important;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.login-sign{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 30px;
+    padding: 0 40px;
+}
+
+.navbar-s-logo {
+
+  justify-self: start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 165px;
+  height: inherit;
+  
+}
+
+.navbar-s-logo img {
+  width: 90%;
+  object-fit: fill;
+}
+
+.navbar-s button {
+  background: #089ee8;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  /* margin-left: 0; */
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 800;
+  width: max-content;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 30px;
+    /* padding: 0 40px;
+}
+
+.nav-links {
+
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-size: 18px;
+}
+
+.nav-links:hover {
+  background-color: #1978A5;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  color: white;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.Mobi-navbar {
+  display: none;
+  font-family: "poppins";
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #089ee8;
+  z-index: 20;
+  height: 90px;
+  color: white;
+  text-align: center;
+  top: calc(100vh - 70px);
+  border-radius: 10px 10px 0px 0px;
+  /* box-shadow: inset 10px 10px 10px #48c0fc; */
+}
+
+.navicons a {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.navicons {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    height: calc(100vh - 60px);
+    position: absolute;
+    top: 59px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #1FBFB8;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: White;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;    
+    /* margin-bottom: 2rem auto; */
+    margin-bottom: 2rem;
+    /* margin: 0; */
+    border-radius: 4px;
+    /* width: 100%; */
+    background: #1978A5;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #1FBFB8;
+    color: #1978A5;
+    transition: 250ms;
+  }
+
+  .navbar-s button {
+    display: none;
+  }
+
+  .navbar-s-logo {
+    margin: 0;
+  }
+
+  .navbar-s {
+    justify-content: space-between;
+  }
+
+  .Mobi-navbar {
+    display: flex;
+  }
+}
+
+.Popup {
+  position: absolute;
+  top: 80vh;
+  right: 10px;
+  background: rgb(0, 183, 213, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.popup-head {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.4rem 1rem;
+  background: rgb(0, 183, 213);
+}
+
+.popup-body {
+  padding: 0.8rem;
+}
+
+.popup-body p {
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------*/
