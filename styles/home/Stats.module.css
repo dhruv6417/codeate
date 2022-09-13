@@ -1,5 +1,5 @@
 .Stats{
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding: 2rem 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(136deg , #56a8d0 ,#00b7d5 , #089ee8);
@@ -53,6 +53,13 @@
     border-radius: 10px;
     object-fit: cover;
     margin: 0.3rem;
+}
+
+@media only screen and (max-width: 750px){
+
+    .Stats_holder{
+        gap: 0;
+    }
 }
 
 @media only screen and (max-width: 540px){

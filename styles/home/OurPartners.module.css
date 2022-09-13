@@ -30,11 +30,21 @@
 .ourPartners .container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     flex-direction: row;
     justify-content: center;
     align-items: auto;
     align-content: flex-start;
+}
+
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1350px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .ourPartners .item {
@@ -105,6 +115,13 @@
     }
     .ourPartners .container {
         padding: 0;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .col{
+        flex-basis: 100%;
+        max-width: 100%;
     }
     .ourPartners .item {
         margin: 0.5rem;
