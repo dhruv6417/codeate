@@ -1,8 +1,9 @@
 import React from 'react'
 
 const build = () => {
-  return (
-    <div>build</div>
+  return (<div className='build'>
+    build
+  </div>
   )
 }
 
