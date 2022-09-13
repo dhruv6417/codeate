@@ -7,7 +7,6 @@ import Navbar2 from "../components/Navbar2";
 function MyApp({ Component, pageProps }) {
   return (
     <div className="">
-      {/* <Navbar /> */}
       <Navbar2/>
       <Navbar/>
       <div>

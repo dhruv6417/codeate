@@ -58,12 +58,12 @@ export const Navbar = () => {
  
 
   return (
-    <div>
+    <div className="navbar-c">
       <nav className="navbar-s ">
         {/* logo */}
         <Link href="/" onClick={closeMobileMenu1}>
           <div className="navbar-s-logo">
-            <img src='/images/code8.png' alt="code8-logo"></img>
+            <img src='/images/code8.png' alt="code8-logo" className="logo-nav"></img>
           </div>
         </Link>
 
@@ -74,8 +74,8 @@ export const Navbar = () => {
         <div>
           <ul className={click1 ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link href="/" className="nav-links" onClick={closeMobileMenu1}>
-                Home
+              <Link href="/" onClick={closeMobileMenu1}>
+                <a className="nav-links">Home</a>
               </Link>
             </li>
 
@@ -85,7 +85,7 @@ export const Navbar = () => {
                 className="nav-links"
                 onClick={closeMobileMenu1}
               >
-                About Us
+                <a className="nav-links">About us</a>
               </Link>
             </li>
 
@@ -96,19 +96,19 @@ export const Navbar = () => {
                 className="nav-links"
                 onClick={closeMobileMenu1}
               >
-                Build
+                <a className="nav-links">Build</a>
               </Link>
             </li>
             <li className="nav-item" onClick={closeMobileMenu1}>
               <Link href="/learn" className="nav-links">
-                Learn
+              <a className="nav-links">Learn</a>
               </Link>
             </li>
 
             {/* Community */}
             <li className="nav-item" onClick={closeMobileMenu1}>
               <Link href="/community" className="nav-links">
-                Community
+              <a className="nav-links">Community</a>
                 {/* <i className='fas fa-caret-down' /> */}
               </Link>
               {/* {dropdown4 && <Dropdown4 onCloseMobileMenu={closeMobileMenu4} />} */}
