@@ -6,7 +6,7 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 
-import Logo from '../assets/images/code8.png'
+import styles from "../styles/Navbar.module.css"
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -58,57 +58,56 @@ export const Navbar = () => {
  
 
   return (
-    <div className="navbar-c">
-      <nav className="navbar-s ">
-        {/* logo */}
+    
+    <div className={`${styles.navbar_c}`}>
+      <nav className={`${styles.navbar_s}`}>
+        
         <Link href="/" onClick={closeMobileMenu1}>
-          <div className="navbar-s-logo">
-            <img src='/images/code8.png' alt="code8-logo" className="logo-nav"></img>
+          <div className={`${styles.navbar_s_logo}`}>
+            <img src='/images/code8.png' alt="code8-logo" className={`${styles.logo_nav}`}></img>
           </div>
         </Link>
 
-        {/* Home */}
         <div className="menu-icon" onClick={handleClick1}>
           <i className={click1 ? "fas fa-times" : "fas fa-bars"} />
         </div>
+
         <div>
           <ul className={click1 ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li className={`${styles.nav_item}`}>
               <Link href="/" onClick={closeMobileMenu1}>
-                <a className="nav-links">Home</a>
+                <a className={`${styles.nav_links}`}>Home</a>
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li className={`${styles.nav_item}`}>
               <Link
                 href="/about"
-                className="nav-links"
                 onClick={closeMobileMenu1}
               >
-                <a className="nav-links">About us</a>
+                <a className={`${styles.nav_links}`}>About us</a>
               </Link>
             </li>
 
             {/* Library */}
-            <li className="nav-item" onClick={extendElement1}>
+            <li className={`${styles.nav_item}`} onClick={extendElement1}>
               <Link
                 href="/build"
-                className="nav-links"
                 onClick={closeMobileMenu1}
               >
-                <a className="nav-links">Build</a>
+                <a className={`${styles.nav_links}`}>Build</a>
               </Link>
             </li>
-            <li className="nav-item" onClick={closeMobileMenu1}>
-              <Link href="/learn" className="nav-links">
-              <a className="nav-links">Learn</a>
+            <li className={`${styles.nav_item}`} onClick={closeMobileMenu1}>
+              <Link href="/learn">
+              <a className={`${styles.nav_links}`}>Learn</a>
               </Link>
             </li>
 
             {/* Community */}
-            <li className="nav-item" onClick={closeMobileMenu1}>
-              <Link href="/community" className="nav-links">
-              <a className="nav-links">Community</a>
+            <li className={`${styles.nav_item}`} onClick={closeMobileMenu1}>
+              <Link href="/community" >
+              <a className={`${styles.nav_links}`}>Community</a>
                 {/* <i className='fas fa-caret-down' /> */}
               </Link>
               {/* {dropdown4 && <Dropdown4 onCloseMobileMenu={closeMobileMenu4} />} */}
@@ -119,7 +118,7 @@ export const Navbar = () => {
         </div>
         {/* <LoginButton /> */}
         {/* <SignUpButton /> */}
-        <div className='login-sign'>
+        <div className={`${styles.login_sign}`}>
         <div className="btn-mobile">
           {button1 && (
             <Button
