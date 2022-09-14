@@ -30,11 +30,11 @@ export const Navbar = () => {
 
   useEffect(() => {
     const showButton1 = () => {
-        if (window.innerWidth <= 960) {
-          setButton1(false);
-        } else {
-          setButton1(true);
-        }
+        // if (window.innerWidth <= 960) {
+        //   setButton1(false);
+        // } else {
+        //   setButton1(true);
+        // }
       };
 
       window.addEventListener("resize", showButton1);
@@ -55,8 +55,6 @@ export const Navbar = () => {
     dropdown1 ? setDropdown1(false) : setDropdown1(true);
   };
 
- 
-
   return (
     
     <div className={`${styles.navbar_c}`}>
@@ -68,24 +66,21 @@ export const Navbar = () => {
           </div>
         </Link>
 
-        <div className="menu-icon" onClick={handleClick1}>
-          <i className={click1 ? "fas fa-times" : "fas fa-bars"} />
+        <div className={`${styles.menu_icon}`} onClick={handleClick1}>
+          <div className={click1 ? "fas fa-times" : "fas fa-bars"} />
         </div>
 
-        <div>
-          <ul className={click1 ? "nav-menu active" : "nav-menu"}>
+        {/* <div className={`${styles.menu_c}`}> */}
+          <ul className={`${styles.nav_menu} ${click1 ? styles.active:styles.empty}`}>
             <li className={`${styles.nav_item}`}>
-              <Link href="/" onClick={closeMobileMenu1}>
-                <a className={`${styles.nav_links}`}>Home</a>
+              <Link href="/" >
+                <div className={`${styles.nav_links}`} onClick={closeMobileMenu1}>Home</div>
               </Link>
             </li>
 
             <li className={`${styles.nav_item}`}>
-              <Link
-                href="/about"
-                onClick={closeMobileMenu1}
-              >
-                <a className={`${styles.nav_links}`}>About us</a>
+              <Link href="/about" >
+                <div className={`${styles.nav_links}`} onClick={closeMobileMenu1}>About us</div>
               </Link>
             </li>
 
@@ -95,57 +90,82 @@ export const Navbar = () => {
                 href="/build"
                 onClick={closeMobileMenu1}
               >
-                <a className={`${styles.nav_links}`}>Build</a>
+                <div className={`${styles.nav_links}`}>Build</div>
               </Link>
             </li>
             <li className={`${styles.nav_item}`} onClick={closeMobileMenu1}>
               <Link href="/learn">
-              <a className={`${styles.nav_links}`}>Learn</a>
+              <div className={`${styles.nav_links}`}>Learn</div>
               </Link>
             </li>
 
             {/* Community */}
             <li className={`${styles.nav_item}`} onClick={closeMobileMenu1}>
               <Link href="/community" >
-              <a className={`${styles.nav_links}`}>Community</a>
+              <div className={`${styles.nav_links}`}>Community</div>
                 {/* <i className='fas fa-caret-down' /> */}
               </Link>
               {/* {dropdown4 && <Dropdown4 onCloseMobileMenu={closeMobileMenu4} />} */}
             </li>
             {/* Updates */}
-
-          </ul>
-        </div>
-        {/* <LoginButton /> */}
-        {/* <SignUpButton /> */}
-        <div className={`${styles.login_sign}`}>
-        <div className="btn-mobile">
-          {button1 && (
-            <Button
-              buttonStyle="btn--primary btn--mobile"
-              buttonSize="btn--medium"
-              onClick={handleClickOpen}
-            >
-              Login
-            </Button>
-          )}
-        </div>
-        <div className="btn-mobile">
-          {button1 && (
-            <Button
-              buttonStyle="btn--primary btn--mobile"
-              buttonSize="btn--medium"
-              onClick={handleClickOpen2}
-            >
-              Sign Up
-            </Button>
-          )}
-        </div>
+            <li className={`${styles.nav_item}`} onClick={closeMobileMenu1}>
+            <div className={`${styles.login_sign}`}>
+          <div className="btn-mobile">
+            {button1 && (
+              <Button
+                  buttonStyle="btn--primary btn--mobile"
+                  buttonSize="btn--medium"
+                  onClick={handleClickOpen}>
+                Login
+              </Button>
+            )}
+          </div>
+          <div className="btn-mobile">
+            {button1 && (
+              <Button
+                buttonStyle="btn--primary btn--mobile"
+                buttonSize="btn--medium"
+                onClick={handleClickOpen2}
+              >
+                Sign Up
+              </Button>
+            )}
+          </div>
         
         </div>
+            </li>
+
+          </ul>
+        {/* </div> */}
+        {/* <LoginButton /> */}
+        {/* <SignUpButton /> */}
+        {/* <div className={`${styles.login_sign}`}>
+          <div className="btn-mobile">
+            {button1 && (
+              <Button
+                  buttonStyle="btn--primary btn--mobile"
+                  buttonSize="btn--medium"
+                  onClick={handleClickOpen}>
+                Login
+              </Button>
+            )}
+          </div>
+          <div className="btn-mobile">
+            {button1 && (
+              <Button
+                buttonStyle="btn--primary btn--mobile"
+                buttonSize="btn--medium"
+                onClick={handleClickOpen2}
+              >
+                Sign Up
+              </Button>
+            )}
+          </div>
+        
+        </div> */}
         {pop && (
-          <div className="Popup">
-            <div className="popup-head">
+          <div className={`${styles.Popup}`}>
+            <div className={`${styles.popup_head}`}>
               <div className="close-button">
                 <i
                   className="fa-solid fa-xmark"
@@ -155,7 +175,7 @@ export const Navbar = () => {
                 ></i>
               </div>
             </div>
-            <div className="popup-body">
+            <div className={`${styles.popup_body}`}>
               <p>Let opportunities land in your inbox.</p>
               <div onClick={handleClickOpen2} style={{ cursor: "pointer" }}>
                 {" "}

@@ -13,7 +13,7 @@
     padding: 10px 20px;
     align-items: center;
     background: linear-gradient(136deg, #56a8d0, #00b7d5, #089ee8);
-    height: 90px;
+    height: 60px;
     width: 100%;
     color: #fff;
     align-items: center;
@@ -86,7 +86,6 @@
 
 .fa_firstdraft {
   margin-left: 0.5rem;
-  /* margin-left: 0; */
   font-size: 1.6rem;
 }
 
@@ -96,12 +95,13 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  height: 100%;
+  height: 50px;
   font-weight: 800;
   width: max-content;
+  
     flex-direction: row;
     justify-content: space-between;
-    gap: 50px;
+    gap: 25px;
 }
 
 .nav_item {
@@ -111,6 +111,7 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: 100%;
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -124,12 +125,13 @@
   text-decoration: none;
   /* padding: 0.5rem 1rem; */
   height: 100%;
+  padding: 10px;
   font-size: 18px;
 }
 
-.nav_menu :hover {
+/* .nav_menu :hover {
   background-color: #08B3E5;
-}
+} */
 
 
 .nav_links:hover {
@@ -178,34 +180,39 @@
 }
 
 @media screen and (max-width: 1020px) {
-  .NavbarItems {
-    position: relative;
+  .nav_item{
+    width: 100%;
   }
 
-  .nav_menu {
+  .nav_menu{
+    
     display: flex;
     flex-direction: column;
-    width: 83%;
+    width: 60%;
     height: calc(100vh - 60px);
     position: absolute;
-    top: 59px;
-    left: -100%;
+    top: 40px;
     opacity: 1;
-    transition: all 0.5s ease;
+    left: -100%;
   }
 
-  .nav_menu .active {
+  .active {
     background: #1FBFB8;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+
+
+
+    align-items: center;
   }
 
   .nav_links {
     text-align: center;
     padding: 2rem;
-    width: 100%;
+    width: 85%;
+    height: 50%;
     display: table;
   }
 
@@ -217,11 +224,15 @@
   .menu_icon {
     display: block;
     position: absolute;
-    top: -8px;
     right: 0;
-    transform: translate(-100%, 60%);
+    /* transform: translate(-100%, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .login_sign{
+    position: absolute;
+    right: 5%;
   }
 
   .fa_times {
@@ -248,18 +259,6 @@
     background: #1FBFB8;
     color: #1978A5;
     transition: 250ms;
-  }
-
-  .navbar_s button {
-    display: none;
-  }
-
-  .navbar_s_logo {
-    margin: 0;
-  }
-
-  .navbar_s {
-    justify-content: space-between;
   }
 
   .Mobi_navbar {
@@ -292,3 +291,4 @@
 .popup_body p {
   color: white;
 }
+

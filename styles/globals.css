@@ -331,18 +331,11 @@ img:hover {
   font-size: 1.6rem;
 }
 
-.nav-menu {
-  display: flex;
-  color: white;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  height: 100%;
-  font-weight: 800;
-  width: max-content;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
+
+.fas{
+  width: 60px;
+  height: 60px;
+  background-color: black;
 }
 
 .fa-bars {
@@ -353,9 +346,6 @@ img:hover {
   display: none;
 }
 
-.menu-icon {
-  display: none;
-}
 
 .Mobi-navbar {
   display: none;
@@ -384,39 +374,6 @@ img:hover {
 }
 
 @media screen and (max-width: 1020px) {
-  .NavbarItems {
-    position: relative;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 83%;
-    height: calc(100vh - 60px);
-    position: absolute;
-    top: 59px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu .active {
-    background: #1FBFB8;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: -8px;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
 
   .fa-times {
     color: White;
@@ -447,32 +404,6 @@ img:hover {
   .Mobi-navbar {
     display: flex;
   }
-}
-
-.Popup {
-  position: absolute;
-  top: 80vh;
-  right: 10px;
-  background: rgb(0, 183, 213, 0.6);
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.popup-head {
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0.4rem 1rem;
-  background: rgb(0, 183, 213);
-}
-
-.popup-body {
-  padding: 0.8rem;
-}
-
-.popup-body p {
-  color: white;
 }
 
 /*------------------------------------------------------------------------------------------*/
