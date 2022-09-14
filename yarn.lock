@@ -7073,9 +7073,9 @@
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.14.tgz"
   "version" "8.4.14"
   dependencies:
-    "nanoid" "^3.3.4"
-    "picocolors" "^1.0.0"
-    "source-map-js" "^1.0.2"
+    ""nanoid"" "^3.3.4"
+    ""picocolors"" "^1.0.0"
+    ""source-map-js"" "^1.0.2"
 
 "postcss@^7.0.35":
   "integrity" "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA=="
@@ -8027,13 +8027,13 @@
   "resolved" "https://registry.npmjs.org/string.prototype.matchall/-/string.prototype.matchall-4.0.7.tgz"
   "version" "4.0.7"
   dependencies:
-    "call-bind" "^1.0.2"
+    ""call-bind" "^1.0.2"
     "define-properties" "^1.1.3"
     "es-abstract" "^1.19.1"
     "get-intrinsic" "^1.1.1"
     "has-symbols" "^1.0.3"
     "internal-slot" "^1.0.3"
-    "regexp.prototype.flags" "^1.4.1"
+    "regexp.prototype.flags"" "^1.4.1"
     "side-channel" "^1.0.4"
 
 "string.prototype.trimend@^1.0.5":
@@ -8050,9 +8050,9 @@
   "resolved" "https://registry.npmjs.org/string.prototype.trimstart/-/string.prototype.trimstart-1.0.5.tgz"
   "version" "1.0.5"
   dependencies:
-    "call-bind" "^1.0.2"
-    "define-properties" "^1.1.4"
-    "es-abstract" "^1.19.5"
+    ""call-bind"" "^1.0.2"
+    ""define-properties"" "^1.1.4"
+    ""es-abstract"" "^1.19.5"
 
 "stringify-object@^3.3.0":
   "integrity" "sha512-rHqiFh1elqCQ9WPLIC8I0Q/g/wj5J1eMkyoiD6eoQApWHP0FtlK7rqnhmabL5VUY9JQCcqwwvlOaSuutekgyrw=="
@@ -8132,14 +8132,14 @@
   "resolved" "https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz"
   "version" "7.2.0"
   dependencies:
-    "has-flag" "^4.0.0"
+    ""has-flag"" "^4.0.0"
 
 "supports-color@^8.0.0":
   "integrity" "sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q=="
   "resolved" "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz"
   "version" "8.1.1"
   dependencies:
-    "has-flag" "^4.0.0"
+    ""has-flag"" "^4.0.0"
 
 "supports-hyperlinks@^2.0.0":
   "integrity" "sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA=="
@@ -8183,12 +8183,12 @@
   "resolved" "https://registry.npmjs.org/svgo/-/svgo-2.8.0.tgz"
   "version" "2.8.0"
   dependencies:
-    "@trysound/sax" "0.2.0"
+    ""@trysound/sax" "0.2.0"
     "commander" "^7.2.0"
     "css-select" "^4.1.3"
     "css-tree" "^1.1.3"
     "csso" "^4.2.0"
-    "picocolors" "^1.0.0"
+    "picocolors"" "^1.0.0"
     "stable" "^0.1.8"
 
 "swiper@^8.3.2":
@@ -8196,8 +8196,8 @@
   "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.3.2.tgz"
   "version" "8.3.2"
   dependencies:
-    "dom7" "^4.0.4"
-    "ssr-window" "^4.0.2"
+    ""dom7" "^4.0.4"
+    "ssr-window"" "^4.0.2"
 
 "symbol-tree@^3.2.4":
   "integrity" "sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw=="
@@ -8270,11 +8270,11 @@
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-5.3.6.tgz"
   "version" "5.3.6"
   dependencies:
-    "@jridgewell/trace-mapping" "^0.3.14"
-    "jest-worker" "^27.4.5"
-    "schema-utils" "^3.1.1"
-    "serialize-javascript" "^6.0.0"
-    "terser" "^5.14.1"
+    ""@jridgewell/trace-mapping"" "^0.3.14"
+    ""jest-worker" "^27.4.5"
+    "schema-utils"" "^3.1.1"
+    ""serialize-javascript" "^6.0.0"
+    "terser"" "^5.14.1"
 
 "terser@^5.0.0", "terser@^5.10.0", "terser@^5.14.1":
   "integrity" "sha512-L1BJiXVmheAQQy+as0oF3Pwtlo4s3Wi1X2zNZ2NxOB4wx9bdS9Vk67XQENLFdLYGCK/Z2di53mTj/hBafR+dTA=="
@@ -8325,7 +8325,7 @@
   "resolved" "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
   "version" "5.0.1"
   dependencies:
-    "is-number" "^7.0.0"
+    ""is-number"" "^7.0.0"
 
 "toidentifier@1.0.1":
   "integrity" "sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA=="
@@ -8337,10 +8337,10 @@
   "resolved" "https://registry.npmjs.org/tough-cookie/-/tough-cookie-4.1.2.tgz"
   "version" "4.1.2"
   dependencies:
-    "psl" "^1.1.33"
-    "punycode" "^2.1.1"
+    ""psl" "^1.1.33"
+    "punycode"" "^2.1.1"
     "universalify" "^0.2.0"
-    "url-parse" "^1.5.3"
+    ""url-parse"" "^1.5.3"
 
 "tr46@^1.0.1":
   "integrity" "sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA=="
@@ -8969,10 +8969,10 @@
   "resolved" "https://registry.npmjs.org/workbox-webpack-plugin/-/workbox-webpack-plugin-6.5.4.tgz"
   "version" "6.5.4"
   dependencies:
-    "fast-json-stable-stringify" "^2.1.0"
+    ""fast-json-stable-stringify" "^2.1.0"
     "pretty-bytes" "^5.4.1"
     "upath" "^1.2.0"
-    "webpack-sources" "^1.4.3"
+    "webpack-sources"" "^1.4.3"
     "workbox-build" "6.5.4"
 
 "workbox-window@6.5.4":
