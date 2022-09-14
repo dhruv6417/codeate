@@ -4,7 +4,8 @@ import Aboutcode8 from "../components/home/Aboutcode8"
 
 import Link from 'next/link'
 import Image from 'next/image'
-import {BsArrowRight} from 'react-icons/bs'
+
+import {FaArrowRight} from "react-icons/fa";
 import  styles from "../styles/learn.module.css"
 import Features2 from '../Components/Features/Features2'
 import Features from "../components/Features/Features"
@@ -15,7 +16,7 @@ export default function Courses () {
     <>
       <div className={`${styles.learnPage}`}>
         <div className={`${styles.learn_grid_container}`}>
-          <div className={`${styles.grid_item}${styles.learn_content}`}>
+          <div className={`${styles.grid_item} ${styles.learn_content}`}>
             <h1 className ={`${styles.learn_page_h1}`}
             >
              Learn skills that keeps you ahead, like never before.
@@ -25,21 +26,23 @@ export default function Courses () {
               Deloitte, TCE, Hitachi, Cisco to provide you with industry
               relevant cohort based courses.
             </p>
-            <div className={`${styles.sliders}`}>
-              <Link className={`${styles.btn}`} href='/learn'>
+            <div className={`${styles.flex}`}>
+              <div className={`${styles.btn}`}>
+              <Link  href='/learn'>
                <a> <span className={`${styles.btn_content}`}>
                   Register to get notify for our next cohort
                 </span>
                 <span className={`${styles.icon}`}>
-                  <BsArrowRight/>
+                <FaArrowRight size={30}/>
                 </span>
                 </a>
               </Link>
+              </div>
             </div>
           </div>
 
           <div className={`${styles.learn_img}`}>
-            <img  src="../public/images/learnpage_first_img.png"/>
+            <img  src="https://raw.githubusercontent.com/KapadiaShubham/code8-media/master/learn/learnpage-first-img.png"></img>
           </div>
         </div>
       </div>

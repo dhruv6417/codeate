@@ -1,4 +1,4 @@
-import styles from "../../styles/Features2.module.css"
+import styles from "../../styles/Features2.module.css";
 
 export default function Features2() {
   return (
@@ -8,7 +8,7 @@ export default function Features2() {
   <p style={{color:'black'}}>
     What makes our courses special?
   </p>
-  </div>
+</div>
   <div className={`${styles.grid_container_home}`}>
     <div className={`${styles.grid_item}`}>
       <div className={`${styles.features_class}`}>
@@ -48,40 +48,46 @@ export default function Features2() {
     </div>
   </div>
 
-  <div   style={{
-    display:'flex',
-    width: '100%',
-    justifyContent: 'space-between',
-  }}>
-    <div className={`${styles.grid_item}`}
+  <div className={`${styles.flex}`}
     style={{
-    width: '20%',
-  }}
-    ></div>
-   
-      <div className={`${styles.grid_item}`} style={{Backgroundcolor: 'rgb(245, 245, 245)', margin: '1rem', borderradius: '27px', padding: '0.7rem 1rem'}}>
-      <div className={`${styles.features_class}`}>
-       <img style={{ display: 'flex' }} src='/images/completion.png'/>
+      width: '100%',
+      justifyContent: 'space-between',
+    }}>
+      <div className={`${styles.grid_item1}`}
+      style={{
+      width: '20%',
+    }}
+      ></div>
+      <div
+        className={`${styles.grid_item}`}
+        style={{
+          background: '#F5F5F5',
+          margin: '1rem',
+          borderRadius: '27px',
+          padding: '0.7rem  1rem',
+          // width: "60%"
+        }}
+      >
+  
+      
+        <div className={`${styles.features_class}`}>
+          <img style={{ display: 'flex' }} src='/images/completion.png'></img>
+        </div>
+  
+        <div className={`${styles.courses_features_h1}`}>Skill validation and certificates</div>
+  
+        <p className={`${styles.courses_features_para}`}>
+         Get your skills validated and become certified by industry professionals.
+        </p>
+  
       </div>
-
-      <div className={`${styles.courses_features_h1}`}>Skill validation and certificates</div>
-
-      <p className={`${styles.courses_features_para}`}>
-       Get your skills validated and become certified by industry professionals.
-      </p>
-
+      <div
+    className={`${styles.grid_item1}`}
+    style={{
+      width: '20%'
+    }}
+  ></div>
+  
     </div>
-    <div
-  className={`${styles.grid_item}`}
-  style={{
-    Backgroundcolor:'white',
-    width: '20%'
-  }}
-></div>
-
-  </div>
-</div>
-
-  )
+  </div>)
 }
-
