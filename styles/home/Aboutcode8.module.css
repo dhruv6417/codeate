@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: black;
 }
 
 .About_heading {
@@ -16,6 +17,7 @@
     margin: 2.3rem 0;
     width: 70%;
     text-align: center;
+    color: black;
 }
 
 .About_List {
