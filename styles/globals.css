@@ -300,3 +300,110 @@ img:hover {
      /* scroll thumb and track */ 
 }
 /*--------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------NAVBAR------------------------------------------------------*/
+
+.stylee {
+  background: #1978A5;
+  /* box-shadow: 4px 12px 4px rgba(0, 0, 0, 0.5); */
+  border-radius: 9px;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+
+
+.sizee {
+  font-size: 14px !important;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  /* margin-left: 0; */
+  font-size: 1.6rem;
+}
+
+
+.fas{
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+
+.Mobi-navbar {
+  display: none;
+  font-family: "poppins";
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #089ee8;
+  z-index: 20;
+  height: 90px;
+  color: white;
+  text-align: center;
+  top: calc(100vh - 70px);
+  border-radius: 10px 10px 0px 0px;
+  /* box-shadow: inset 10px 10px 10px #48c0fc; */
+}
+
+.navicons a {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.navicons {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 1020px) {
+
+  .fa-times {
+    color: White;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;    
+    /* margin-bottom: 2rem auto; */
+    margin-bottom: 2rem;
+    /* margin: 0; */
+    border-radius: 4px;
+    /* width: 100%; */
+    background: #1978A5;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #1FBFB8;
+    color: #1978A5;
+    transition: 250ms;
+  }
+
+  .Mobi-navbar {
+    display: flex;
+  }
+}
+
+/*------------------------------------------------------------------------------------------*/
