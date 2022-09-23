@@ -110,8 +110,11 @@ const Footer = () => {
                 <hr />
                 <div className={styles.subfooter}>
                     <div className={styles.subfooter__container}>
+                        
                         <div className={styles.subfooter__items}>
+                        <Link href="/forms">
                             <h1 className={styles.subfooter__text}>Forms</h1>
+                            </Link> 
                             <h1 className={styles.subfooter__text}>Terms & conditions</h1>
                             <Link href="/privacy">
                                 <h1 className={styles.subfooter__text}>Policy</h1>
